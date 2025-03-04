@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Infographic Vliegvelden der Nederlanden</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+</head>
+
+<body>
+
+    <section id="menu">
+        <article id="titel">
+            <h1>Klik op een icoon en selecteer vliegveld</h1>
+        </article>
+
+        <article id="eeldeBorder">
+            <p id="vliegveldEelde"> Eelde</p>
+            <img src="img/planeicon.svg" alt="EindhovenIcon" id="iconEelde">
+            <!--https://www.flaticon.com/free-icon/plane_723955-->
+        </article>
+
+        <article id="rotterdamBorder">
+            <p id="vliegveldRotterdam"> Rotterdam</p>
+            <img src="img/plane.png" alt="Rotterdambutton" id="iconRotterdam">
+            <!--https://www.flaticon.com/free-icon/plane_723955-->
+        </article>
+
+        <article id="eindhovenBorder">
+            <p id="vliegveldEindhoven"> Eindhoven</p>
+            <img src="img/black-plane.svg" alt="Eindhovenbutton" id="iconEindhoven">
+            <!--https://www.flaticon.com/free-icon/black-plane_61212#term=airport&page=1&position=3-->
+        </article>
+
+        <article id="maastrichtBorder">
+            <p id="vliegveldMaastricht"> Maastricht</p>
+            <img src="img/black-suitcase.svg" alt="Maastrichtbutton" id="iconMaastricht">
+            <!-- https://www.flaticon.com/free-icon/black-suitcase_44937#term=suitcase%20icon&page=1&position=7-->
+        </article>
+
+        <article id="amsterdamBorder">
+            <p id="vliegveldAmsterdam"> Amsterdam </p>
+            <img src="img/arrow.svg" alt="Amsterdambutton" id="iconAmsterdam">
+            <!-- https://www.flaticon.com/free-icon/download_724933#term=arrow&page=1&position=83-->
+        </article>
+    </section>
+
+    <section id="achtergrond">
+        <article id="feedback">
+            <h1 id="vliegveldFeedback">Momenteel bevind u zich op</h1>
+            <p id="huidigeVliegveld"></p>
+        </article>
+    </section>
+
+    <section id="showJaar">
+        <h1 id="huidigeJaar">Geselecteerd jaar:</h1>
+        <p id="geselecteerdJaar"></p>
+    </section>
+
+    <section id="titelVergelijking">
+        <p id="vergelijking"></p>
+        <p id="vergelijkingVliegveld"></p>
+    </section>
+
+    <section>
+        <img src="img/paper-plane.svg" alt="papierenVliegtuig" id="papierenVliegtuig">
+        <!-- https://www.flaticon.com/free-icon/paper-plane_149063#term=plane&page=1&position=16-->
+    </section>
+
+    <section>
+        <div class="dropdown">
+            <button class="dropbtn">Selecteer</button>
+            <div class="dropdown-content">
+                <a id="jaar2018">2018</a>
+                <a id="jaar2017">2017</a>
+                <a id="jaar2016">2016</a>
+                <a id="jaar2015">2015</a>
+                <a id="jaar2014">2014</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="informatieGrid">
+        <article id="vliegtuigInfo">
+            <img src="img/airplane.svg" alt="vliegtuig" id="vliegtuig">
+            <!-- https://www.flaticon.com/free-icon/airplane_214335#term=plane&page=1&position=16-->
+            <h1 class="titelinfo">Vluchtinformatie</h1>
+            <div class="leeg">
+                <p id="totaalVluchten"></p>
+                <p id="totaalVertrokken"></p>
+                <p id="totaalAangekomen"></p>
+                <p id="totaalGeregeld"></p>
+                <p id="totaalOngeregeld"></p>
+            </div>
+        </article>
+
+        <article id="vluchtInfo">
+            <img src="img/geography.svg" alt="wereld" id="wereld">
+            <!-- https://www.flaticon.com/free-icon/geography_1575486-->
+            <h1 class="titelinfo">Wereldinformatie</h1>
+            <p id="totaalIntercontinentaal"></p>
+            <p id="totaalAfrika"></p>
+            <p id="totaalAmerika"></p>
+            <p id="totaalAzie"></p>
+            <p id="totaalEuropa"></p>
+        </article>
+
+        <article id="passagierInfo">
+            <img src="img/woman.svg" alt="vrouwelijke passagier" id="passagier">
+            <!--https://www.flaticon.com/free-icon/woman_1533257-->
+            <h1 class="titelinfo">Passagiers</h1>
+            <p id="totaalPassagiers"></p>
+            <p id="totaalVertrokkenPassagiers"></p>
+            <p id="totaalAangekomenPassagiers"></p>
+            <p id="totaalGeregeldePassagiers"></p>
+            <p id="totaalOnGeregeldePassagiers"></p>
+        </article>
+
+        <article id="koffers">
+            <img src="img/koffers.svg" alt="koffers" id="goederen">
+            <!--https://www.flaticon.com/free-icon/luggage_1595815#term=luggage%20trolley&page=3&position=25-->
+            <h1 class="titelinfo">Goederen</h1>
+            <p id="totaalGoederenVervoer"></p>
+            <p id="totaalGelosteGoederen"></p>
+            <p id="totaalGeladenGoederen"></p>
+            <p id="totaalPostVervoer"></p>
+            <p id="totaalGelostePost"></p>
+        </article>
+    </section>
+
+    <!--Js.Chart-->
+    <div class="chartjsclass">
+        <canvas id="myChart"></canvas>
+        <canvas id="chartWereld"></canvas>
+        <canvas id="chartPassagiers"></canvas>
+        <canvas id="chartGoederen"></canvas>
+    </div>
+
+
+    <script>
+
+/*https://www.chartjs.org/docs/latest/charts/doughnut.html 
+/*De data in de onderstaande charts is een lege array zodat er met JQUERY en javascript data in gepushed kan worden*/
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ["2014", "2015", " 2016", "2017 ", " 2018"],
+                datasets: [{
+                    label: 'Totaal aantal vluchten',
+                    data: [],
+                    backgroundColor: ["#c0d8f4", "#f4e4ef", "#ead2ec", "#beb6dd", "#8f85aa"],
+                    borderColor: ["#c0d8f4", "#f4e4ef", "#ead2ec", "#beb6dd", "#8f85aa"],
+                    borderWidth: 1,
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+
+/*https://www.chartjs.org/docs/latest/charts/bar.html*/
+        var ctx = document.getElementById('chartWereld').getContext('2d');
+        var chartWereld = new Chart(ctx, {
+            type: 'horizontalBar',
+            data: {
+                labels: ["2014", "2015", " 2016", "2017 ", " 2018"],
+                datasets: [{
+                    label: 'Totaal intercontinentiale vluchten',
+                    data: [],
+                    backgroundColor: ["#c0d8f4", "#f4e4ef", "#ead2ec", "#beb6dd", "#8f85aa"],
+                    borderColor: ["#c0d8f4", "#f4e4ef", "#ead2ec", "#beb6dd", "#8f85aa"],
+                    borderWidth: 1,
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+
+        /*https://www.chartjs.org/docs/latest/charts/doughnut.html*/
+
+        var ctx = document.getElementById('chartPassagiers').getContext('2d');
+        var chartPassagiers = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ["2014", "2015", " 2016", "2017 ", " 2018"],
+                datasets: [{
+                    label: 'Totaal aantal Passagiers',
+                    data: [],
+                    backgroundColor: ["#c0d8f4", "#f4e4ef", "#ead2ec", "#beb6dd", "#8f85aa"],
+                    borderColor: ["#c0d8f4", "#f4e4ef", "#ead2ec", "#beb6dd", "#8f85aa"],
+                    borderWidth: 1,
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+
+        https://www.chartjs.org/docs/latest/charts/bar.html
+        var ctx = document.getElementById('chartGoederen').getContext('2d');
+        var chartGoederen = new Chart(ctx, {
+            type: "bar",
+            data: {
+                labels: ["2014", "2015", " 2016", "2017 ", " 2018"],
+                datasets: [{
+                    label: 'Totaal aantal goederen',
+                    data: [],
+                    backgroundColor: ["#c0d8f4", "#f4e4ef", "#ead2ec", "#beb6dd", "#8f85aa"],
+                    borderColor: ["#c0d8f4", "#f4e4ef", "#ead2ec", "#beb6dd", "#8f85aa"],
+                    borderWidth: 1,
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>
