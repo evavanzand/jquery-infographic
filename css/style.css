@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Poppins:500');
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:600');
+
+
+body {
+    margin: 0px;
+}
+
+#menu {
+    width: 30%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, auto);
+    grid-row-gap: 10px;
+    margin-left: 53px;
+}
+
+#titel {
+    font-family: 'Roboto Mono', sans-serif;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#eeldeBorder {
+    border-color: #c0d8f4;
+    border-width: 10px;
+    border-style: solid;
+    background: #c0d8f4;
+    width: 96%;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#rotterdamBorder {
+    border-color: #f4e4ef;
+    border-width: 10px;
+    border-style: solid;
+    background: #f4e4ef;
+    width: 96%;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#eindhovenBorder {
+    border-color: #ead2ec;
+    border-width: 10px;
+    border-style: solid;
+    background: #ead2ec;
+    width: 96%;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#maastrichtBorder {
+    border-color: #beb6dd;
+    border-width: 10px;
+    border-style: solid;
+    background: #beb6dd;
+    width: 96%;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#amsterdamBorder {
+    border-color: #8f85aa;
+    border-width: 10px;
+    border-style: solid;
+    background: #8f85aa;
+    ;
+    width: 96%;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#vliegveldEelde {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 20px;
+}
+
+#vliegveldRotterdam {
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 20px;
+}
+
+#vliegveldEindhoven {
+    grid-column: 1;
+    grid-row: 4;
+    margin-left: 20px;
+}
+
+#vliegveldMaastricht {
+    grid-column: 1;
+    grid-row: 5;
+    margin-left: 20px;
+}
+
+#vliegveldAmsterdam {
+    grid-column: 1;
+    grid-row: 6;
+    margin-left: 20px;
+}
+
+
+#iconEelde {
+    position: absolute;
+    top: 95px;
+    left: 508px;
+    width: 35px;
+}
+
+#iconRotterdam {
+    position: absolute;
+    top: 177px;
+    left: 508px;
+    width: 35px;
+}
+
+#iconEindhoven {
+    position: absolute;
+    top: 262px;
+    left: 508px;
+    width: 35px;
+}
+
+#iconMaastricht {
+    position: absolute;
+    top: 344px;
+    left: 508px;
+    width: 35px;
+}
+
+#iconAmsterdam {
+    position: absolute;
+    top: 423px;
+    left: 508px;
+    width: 35px;
+}
+
+#vliegveldFeedback {
+    font-family: 'Bitter', sans-serif;
+    color: #8f85aa;
+    font-size: 42px;
+    left: 26%;
+    margin-bottom: 5px;
+}
+
+#huidigeVliegveld {
+    font-family: 'Source Code Pro', monospace;
+    color: #3e4067;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#feedback {
+    width: 50%;
+    position: absolute;
+    top: -15px;
+    left: 26%;
+}
+
+#papierenVliegtuig {
+    width: 80px;
+    position: absolute;
+    top: 100px;
+    left: 1681px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    animation: papier 3s infinite;
+}
+
+/*https://www.w3schools.com/howto/howto_css_flip_image.asp*/
+
+@keyframes papier {
+    0% {
+        top: 150px;
+    }
+
+    50% {
+        top: 200px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
+
+#iconEelde:hover {
+    width: 43px;
+    transition: ease-in-out 0.2s;
+}
+
+#iconRotterdam:hover {
+    width: 43px;
+    transition: ease-in-out 0.2s;
+}
+
+#iconEindhoven:hover {
+    width: 43px;
+    transition: ease-in-out 0.2s;
+}
+
+#iconMaastricht:hover {
+    width: 43px;
+    transition: ease-in-out 0.2s;
+}
+
+#iconAmsterdam:hover {
+    width: 43px;
+    transition: ease-in-out 0.2s;
+}
+
+#achtergrond {
+    position: absolute;
+    top: 0px;
+    left: 35%;
+    /*  https://www.freepik.com/free-vector/tree-mountain-landscape_3379683.htm*/
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    height: 915px;
+    width: 58%;
+    padding: 20px;
+    margin-left: 90px;
+}
+
+#vliegtuigInfo {
+    position: absolute;
+    top: 457px;
+    left: 42%;
+    width: 200px;
+}
+
+#vliegtuig {
+    width: 134px;
+    padding-left: 42px;
+}
+
+#vliegtuig:hover {
+    position: relative;
+    animation: omhoogje 3s infinite;
+}
+
+
+/*https://www.w3schools.com/css/css3_animations.asp*/
+
+
+@keyframes omhoogje {
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 20px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+#vluchtInfo {
+    position: absolute;
+    top: 437px;
+    left: 56%;
+}
+
+#wereld {
+    width: 153px;
+    padding-left: 25px;
+}
+
+#wereld:hover {
+    animation-name: rot;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rot {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*https://www.w3schools.com/css/css3_animations.asp*/
+
+#passagierInfo {
+    position: absolute;
+    top: 438px;
+    left: 70.5%;
+    width: 205px;
+}
+
+#passagier {
+    width: 75%;
+    margin-left: 32px;
+}
+
+#passagier:hover {
+    position: relative;
+    animation: schuif 4s infinite;
+}
+
+@keyframes schuif {
+    0% {
+        left: -25px;
+    }
+
+    50% {
+        left: 25px;
+    }
+
+    100% {
+        left: -25px;
+    }
+}
+/*https://www.w3schools.com/css/css3_animations.asp*/
+
+#koffers {
+    position: absolute;
+    top: 476px;
+    left: 85%;
+    width: 13.5%;
+}
+
+#goederen {
+    width: 45%;
+    padding-left: 66px;
+}
+
+#goederen:hover {
+    position: relative;
+    animation: schuif 3s infinite;
+    margin-left: 5%;
+}
+
+.titelinfo {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    border: white;
+    border-color: white;
+    background-color: white;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+}
+
+#totaalVluchten {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalVertrokken {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalAangekomen {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalGeregeld {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalOngeregeld {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalIntercontinentaal {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalAfrika {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalAmerika {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalAzie {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalEuropa {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalPassagiers {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalVertrokkenPassagiers {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalAangekomenPassagiers {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalGeregeldePassagiers {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalOnGeregeldePassagiers {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalGoederenVervoer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalGelosteGoederen {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalGeladenGoederen {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalPostVervoer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#totaalGelostePost {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+/*Drop down menu. https://www.w3schools.com/css/css_dropdowns.asp */
+
+.dropbtn {
+    background-color: #3e4067;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    top: 299px;
+    left: 70%;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 99px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #fcdaeb
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #a48bb5;
+}
+
+/* Einde Dropdown menu*/
+
+/* Begin met tekst voor bij het dropdown menu*/
+#showJaar {
+    position: absolute;
+    top: 250px;
+    left: 66%;
+}
+
+#huidigeJaar {
+    font-family: 'Bitter', sans-serif;
+    ;
+    font-size: 20px;
+    color: #8f85aa;
+}
+
+#geselecteerdJaar {
+    font-family: 'Source Code Pro', monospace;
+    color: #3e4067;
+    font-size: 29px;
+    text-align: left;
+    margin-top: 15px;
+
+}
+
+#jaar2018 {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+#jaar2017 {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+#jaar2016 {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+#jaar2015 {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+#jaar2014 {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+/* Vanaf hier chart*/
+
+#myChart {
+    margin-top: 81px;
+    left: 8px;
+    top: 591px;
+    display: none;
+    width: 750px !important;
+    height: auto !important;
+}
+
+.chartjsclass {
+    width: 50%;
+}
+
+#chartWereld {
+    margin-top: 81px;
+    left: 8px;
+    top: 591px;
+    display: none;
+    width: 750px !important;
+    height: auto !important;
+}
+
+#chartPassagiers {
+    margin-top: 81px;
+    left: 8px;
+    top: 591px;
+    display: none;
+    width: 750px !important;
+    height: auto !important;
+}
+
+#chartGoederen {
+    margin-top: 81px;
+    left: 8px;
+    top: 591px;
+    display: none;
+    width: 750px !important;
+    height: auto !important;
+}
+
+/*titel vergelijking*/
+#titelVergelijking {
+    position: absolute;
+    top: 400px;
+    left: 25%;
+}
+
+#vergelijking {
+    font-family: "Bitter", sans-serif;
+    font-size: 25px;
+    color: black;
+    position: absolute;
+    top: 71px;
+    left: -419px;
+    width: 380px;
+}
+
+#vergelijkingVliegveld {
+    font-family: 'Bitter', sans-serif;
+    font-size: 20px;
+    color: #3e4067;
+    position: absolute;
+    top: 102px;
+    left: -72px;
+    margin-top: 8px;
+    width: 450px;
+}
